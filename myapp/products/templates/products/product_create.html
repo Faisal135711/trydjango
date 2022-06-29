@@ -1,0 +1,21 @@
+{%extends 'base.html'%} {% block content %} {% comment %}
+<form method="POST" action="">
+  {% csrf_token %} {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>
+{% endcomment %} {% comment %}
+<form method="POST" action="">
+  {% csrf_token %}
+  <input type="text" name="title" placeholder="Your title" />
+  <input type="text" name="description" placeholder="Your description" />
+  <input type="number" name="price" placeholder="Your prices" />
+  <input type="submit" value="Save" />
+</form>
+{% endcomment %}
+
+<form method="POST" action="">
+  {% csrf_token %} {{form.as_p}}
+  <input type="submit" value="Save" />
+</form>
+
+{%endblock%}
